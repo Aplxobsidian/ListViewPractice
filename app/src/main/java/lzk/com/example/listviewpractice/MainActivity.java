@@ -2,11 +2,13 @@ package lzk.com.example.listviewpractice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         listview = findViewById(R.id.stulistview);
 
-        ArrayList<String> arrayList = new ArrayList<>();
+        final ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("20161707");
         arrayList.add("20161713");
         arrayList.add("20171591");
@@ -45,7 +47,10 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("20171666");
         arrayList.add("20171667");
         arrayList.add("20171668");
-        arrayList.add("20171669");arrayList.add("20171670");arrayList.add("20171679");arrayList.add("20171688");
+        arrayList.add("20171669");
+        arrayList.add("20171670");
+        arrayList.add("20171679");
+        arrayList.add("20171688");
         arrayList.add("20171697");
         arrayList.add("20171705");
         arrayList.add("20171707");
@@ -64,7 +69,15 @@ public class MainActivity extends AppCompatActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                
+                Toast.makeText(MainActivity.this,"Selected: "+arrayList.get(position),Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
+
+                intent.putExtra("cquid",arrayList.get(position));
+
+
+                startActivity(intent);
+
             }
         });
 
