@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ListViewPractice</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus lectus magna, dapibus eleifend risus congue ac. Integer massa sem, feugiat a erat at, accumsan tristique nulla. Morbi pharetra ante nunc, quis scelerisque ligula lobortis id. Duis dui sapien, commodo ut pretium sed, sagittis non purus. Etiam condimentum sed lorem id vehicula. Cras sollicitudin varius imperdiet. Curabitur rhoncus, metus a varius vehicula, ipsum est pretium odio, at tincidunt diam orci ac augue. Sed tincidunt egestas ex in fermentum.</string>
 </resources>

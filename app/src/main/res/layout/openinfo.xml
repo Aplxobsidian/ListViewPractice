@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:id="@+id/openinfo"
+    >
 
 
     <ImageView
+        android:id="@+id/infoimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        />
 
-
+    <TextView
+        android:id="@+id/loremtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem"
+        android:textSize="22sp"
+        android:layout_below="@id/infoimg"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
         />
 
 
-</LinearLayout>
+
+</RelativeLayout>
